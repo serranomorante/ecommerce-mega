@@ -1,8 +1,8 @@
 import { ApolloClient } from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import withApollo from "next-with-apollo";
-
+import { ApolloProvider } from "@apollo/react-hooks";
 import { createHttpLink } from "apollo-link-http";
+import withApollo from "next-with-apollo";
 
 import fetch from "isomorphic-unfetch";
 
@@ -14,9 +14,19 @@ const link = createHttpLink({
 });
 
 export default withApollo(
-  ({ initialState }) =>
-    new ApolloClient({
+  ({ initialState }) => {
+    return new ApolloClient({
       link: link,
       cache: new InMemoryCache().restore(initialState || {}),
-    })
+    });
+  },
+  {
+    render: ({ Page, props }) => {
+      return (
+        <ApolloProvider client={props.apollo}>
+          <Page {...props} />
+        </ApolloProvider>
+      );
+    },
+  }
 );

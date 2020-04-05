@@ -1231,16 +1231,6 @@
     tslib "1.11.1"
     upper-case "2.0.1"
 
-"@graphql-codegen/typescript-compatibility@^1.13.1":
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-compatibility/-/typescript-compatibility-1.13.1.tgz#a3c91e415bfc326672b9a40a770eb9c6d83336a7"
-  integrity sha512-Z7uXTKfSLmJbRzLIP9ULRdwd0mv9MpD0FOw5+1Qz/hYRZvkDaZWYNzKQY+16B2kTiWwKYC1+7lLm7whOKfK8Lw==
-  dependencies:
-    "@graphql-codegen/plugin-helpers" "1.13.1"
-    "@graphql-codegen/visitor-plugin-common" "1.13.1"
-    pascal-case "3.1.1"
-    tslib "1.11.1"
-
 "@graphql-codegen/typescript-operations@^1.13.1":
   version "1.13.1"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-operations/-/typescript-operations-1.13.1.tgz#de04f4edd8648146baeb28089a2613fef2f34545"

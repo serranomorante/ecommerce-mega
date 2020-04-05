@@ -1,16 +1,23 @@
 import React from "react";
-import { ArticlesComponent } from "../generated/apolloComponents";
+
+// next
 import { NextPage, GetServerSideProps } from "next";
+import { getDataFromTree } from "@apollo/react-ssr";
+
+// interface
 import Article from "../interfaces/article/Article";
-import ARTICLES from "../graphql/queries/article/articles";
+
+// graphql
+import { ArticlesComponent } from "../generated/apolloComponents";
+
+// HOC
+import withApollo from "../lib/withApollo";
 
 interface Props {
   articles?: Article[];
 }
 
-const AboutUs: NextPage<Props> = ({ articles }) => {
-  console.log(articles);
-
+const AboutUs: NextPage<Props> = () => {
   return (
     <ArticlesComponent>
       {({ loading, error, data }) => {
@@ -29,10 +36,4 @@ const AboutUs: NextPage<Props> = ({ articles }) => {
   );
 };
 
-export default AboutUs;
-
-export const getServerSideProps: GetServerSideProps = async ({ query }) => {
-  return {
-    props: {},
-  };
-};
+export default withApollo(AboutUs, { getDataFromTree });
