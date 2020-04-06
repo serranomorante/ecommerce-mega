@@ -4,6 +4,7 @@ import {
   CenterComponentWrapper,
   LeftAlignWrapper,
   RightAlignWrapper,
+  StyledIconButton,
 } from "./styles";
 import SearchBox from "../SearchBox";
 import Brand from "../Brand";
@@ -16,7 +17,10 @@ const BigNavbar: React.FC = () => {
           <Brand />
         </LeftAlignWrapper>
         <SearchBox />
-        <RightAlignWrapper />
+        <RightAlignWrapper>
+          <StyledIconButton icon={["far", "heart"]} />
+          <StyledIconButton icon={"shopping-cart"} />
+        </RightAlignWrapper>
       </CenterComponentWrapper>
     </StyledBigNavbar>
   );

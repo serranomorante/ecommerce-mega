@@ -4,7 +4,7 @@ const Button = styled.button`
   position: relative;
   bottom: 2px;
   right: -2px;
-  width: 65px;
+  width: ${({ theme: { sizes } }) => sizes!.desktop.searchButtonWidth}px;
   height: 37px;
   display: flex;
   align-items: center;
@@ -44,10 +44,12 @@ const SelectWrapper = styled.div`
   display: flex;
   position: relative;
 
-  & svg {
+  & > svg {
     position: absolute;
     align-self: center;
-    right: 4px;
+    right: calc(
+      ${({ theme: { sizes } }) => sizes!.desktop.searchButtonWidth}px + 5px
+    );
     pointer-events: none;
   }
 `;

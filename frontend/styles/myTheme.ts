@@ -36,6 +36,9 @@ const myTheme: DefaultTheme = {
       searchButtonWidth: 45,
       selectWidth: 120,
     },
+    desktop: {
+      searchButtonWidth: 65,
+    },
     formHeight: 37,
     lateralMargin: 20,
     sliderHeight: 400,

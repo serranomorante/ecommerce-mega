@@ -1,11 +1,15 @@
 import styled from "styled-components";
+import IconButton from "../../global/IconButton";
 
 const LeftAlignWrapper = styled.div`
   position: absolute;
   left: 0;
 `;
 
-const RightAlignWrapper = styled.div``;
+const RightAlignWrapper = styled.div`
+  position: absolute;
+  right: 0;
+`;
 
 const CenterComponentWrapper = styled.div`
   width: 100%;
@@ -33,9 +37,16 @@ const StyledBigNavbar = styled.div`
   border-bottom-style: solid;
 `;
 
+const StyledIconButton = styled(IconButton)`
+  & svg {
+    opacity: 1;
+  }
+`;
+
 export {
   LeftAlignWrapper,
   RightAlignWrapper,
   CenterComponentWrapper,
   StyledBigNavbar,
+  StyledIconButton,
 };

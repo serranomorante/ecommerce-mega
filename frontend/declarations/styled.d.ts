@@ -40,6 +40,9 @@ declare module "styled-components" {
         selectWidth: number;
         searchButtonWidth: number;
       };
+      desktop: {
+        searchButtonWidth: number;
+      };
       formHeight?: number;
       lateralMargin?: number;
       sliderHeight: number;
