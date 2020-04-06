@@ -1,12 +1,16 @@
 import { NextPage } from "next";
 import styled from "styled-components";
 import Layout from "../components/layout/Layout";
+import { StoreProvider } from "easy-peasy";
+import store from "../store/store";
 
 const Home: NextPage<{ userAgent: string }> = ({ userAgent }) => (
-  <Layout>
-    <h1>Hello world! - user agent: {userAgent}</h1>
-    <StyledTest>This is working</StyledTest>
-  </Layout>
+  <StoreProvider store={store}>
+    <Layout>
+      <h1>Hello world! - user agent: {userAgent}</h1>
+      <StyledTest>This is working</StyledTest>
+    </Layout>
+  </StoreProvider>
 );
 
 Home.getInitialProps = async ({ req }) => {

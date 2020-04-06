@@ -41,13 +41,13 @@ const StyledSearchBox = styled(({ ...props }) => <SearchBox {...props} />)`
 
     & > svg {
       right: calc(
-        ${({ theme: { sizes } }) => sizes.mobile.searchBoxWidth}px + 5px
+        ${({ theme: { sizes } }) => sizes.mobile.searchButtonWidth}px + 5px
       );
     }
 
     & > button {
       position: absolute;
-      width: ${({ theme: { sizes } }) => sizes.mobile.searchBoxWidth}px;
+      width: ${({ theme: { sizes } }) => sizes.mobile.searchButtonWidth}px;
       top: -2px;
 
       & > svg {

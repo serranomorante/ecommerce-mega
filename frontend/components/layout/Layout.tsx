@@ -1,6 +1,10 @@
 import * as React from "react";
 import Head from "next/head";
-import { StyledMobileNavbar, NavbarContainer } from "./styles";
+import {
+  StyledMobileNavbar,
+  NavbarContainer,
+  StyledDesktopNavbar,
+} from "./styles";
 
 type Props = {
   title?: string;
@@ -19,6 +23,7 @@ const Layout: React.FC<Props> = ({
     <header>
       <NavbarContainer>
         <StyledMobileNavbar />
+        <StyledDesktopNavbar />
       </NavbarContainer>
     </header>
     {children}

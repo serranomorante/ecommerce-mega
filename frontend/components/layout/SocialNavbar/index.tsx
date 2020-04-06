@@ -18,16 +18,16 @@ const SocialNavbar: React.FC = () => {
         <LeftAlignWrapper>
           <SocialMediaWrapper>
             <SocialButton>
-              <FontAwesomeIcon icon="facebook" />
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
             </SocialButton>
             <SocialButton>
-              <FontAwesomeIcon icon="instagram" />
+              <FontAwesomeIcon icon={["fab", "instagram"]} />
             </SocialButton>
             <SocialButton>
-              <FontAwesomeIcon icon="twitter" />
+              <FontAwesomeIcon icon={["fab", "twitter"]} />
             </SocialButton>
             <SocialButton>
-              <FontAwesomeIcon icon="youtube" />
+              <FontAwesomeIcon icon={["fab", "youtube"]} />
             </SocialButton>
           </SocialMediaWrapper>
         </LeftAlignWrapper>
