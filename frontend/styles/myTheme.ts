@@ -38,6 +38,7 @@ const myTheme: DefaultTheme = {
     },
     formHeight: 37,
     lateralMargin: 20,
+    sliderHeight: 400,
   },
 };
 

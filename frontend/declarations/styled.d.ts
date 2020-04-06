@@ -42,6 +42,7 @@ declare module "styled-components" {
       };
       formHeight?: number;
       lateralMargin?: number;
+      sliderHeight: number;
     };
   }
 }

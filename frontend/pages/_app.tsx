@@ -11,7 +11,12 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 // font awesome library
-import { faChevronDown, faSearch } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronDown,
+  faSearch,
+  faArrowRight,
+  faArrowLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faInstagram,
@@ -25,7 +30,9 @@ library.add(
   faFacebook,
   faInstagram,
   faTwitter,
-  faYoutube
+  faYoutube,
+  faArrowRight,
+  faArrowLeft
 );
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
