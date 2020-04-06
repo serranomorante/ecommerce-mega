@@ -7,7 +7,13 @@ declare module "styled-components" {
     direction: string;
 
     palette?: {
-      type: string;
+      type?: string;
+      main: string;
+      secondary: string;
+      lightBackground: string;
+      lightLetters: string;
+      background: string;
+      formBorderColor: string;
     };
 
     breakpoints?: {
@@ -25,6 +31,15 @@ declare module "styled-components" {
       dropdown?: number;
       mobileNavbar?: number;
       carouselButton?: number;
+    };
+
+    sizes?: {
+      mobile?: {
+        searchBoxWidth: number;
+        selectWidth: number;
+        searchButtonWidth: number;
+      };
+      formHeight?: number;
     };
   }
 }
