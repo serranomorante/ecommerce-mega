@@ -27,6 +27,7 @@ const myTheme: DefaultTheme = {
     lightLetters: "#6a6a6a",
     background: "#f2f2f2",
     formBorderColor: "#d0d0d082",
+    navbarBorderColor: "#cccccc69",
   },
 
   sizes: {
@@ -36,6 +37,7 @@ const myTheme: DefaultTheme = {
       selectWidth: 120,
     },
     formHeight: 37,
+    lateralMargin: 20,
   },
 };
 

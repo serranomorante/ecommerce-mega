@@ -14,6 +14,7 @@ declare module "styled-components" {
       lightLetters: string;
       background: string;
       formBorderColor: string;
+      navbarBorderColor: string;
     };
 
     breakpoints?: {
@@ -40,6 +41,7 @@ declare module "styled-components" {
         searchButtonWidth: number;
       };
       formHeight?: number;
+      lateralMargin?: number;
     };
   }
 }

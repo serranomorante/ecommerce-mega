@@ -11,15 +11,22 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 // font awesome library
+import { faChevronDown, faSearch } from "@fortawesome/free-solid-svg-icons";
 import {
-  faBars,
-  faUser,
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+
+library.add(
   faChevronDown,
   faSearch,
-} from "@fortawesome/free-solid-svg-icons";
-import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
-
-library.add(faChevronDown, faSearch);
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faYoutube
+);
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
