@@ -1,7 +1,6 @@
 import React from "react";
 import SocialNavbar from "../SocialNavbar";
-import { StyledNavbar, CentralItemsWrapper } from "./styles";
-import NavbarItems from "../NavbarItems";
+import { StyledNavbar, CentralItemsWrapper, StyledNavbarItems } from "./styles";
 import BigNavbar from "../BigNavbar";
 
 interface Props {
@@ -15,7 +14,7 @@ const DesktopNavbar: React.FC<Props> = ({ className }) => {
       <BigNavbar />
       <StyledNavbar>
         <CentralItemsWrapper>
-          <NavbarItems />
+          <StyledNavbarItems />
         </CentralItemsWrapper>
       </StyledNavbar>
     </div>

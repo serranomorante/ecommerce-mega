@@ -39,12 +39,13 @@ declare module "styled-components" {
         searchBoxWidth: number;
         selectWidth: number;
         searchButtonWidth: number;
+        lateralMargin?: number;
       };
       desktop: {
         searchButtonWidth: number;
+        lateralMargin?: number;
       };
       formHeight?: number;
-      lateralMargin?: number;
       sliderHeight: number;
     };
   }

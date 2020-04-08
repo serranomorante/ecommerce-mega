@@ -60,7 +60,7 @@ const CenterComponentWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto ${({ theme: { sizes } }) => sizes!.lateralMargin}%;
+  margin: auto ${({ theme: { sizes } }) => sizes!.desktop.lateralMargin}%;
   position: relative;
 
   @media (max-width: ${({ theme: { breakpoints } }) =>

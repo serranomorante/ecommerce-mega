@@ -1,18 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-const ContainersOverride = styled.div`
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 15px;
-
+const desktopContainers = css`
   & div:nth-child(1) {
     grid-column: 1 / span 2;
-    flex-direction: row;
   }
 
   & div:nth-child(2) {
@@ -23,20 +13,31 @@ const ContainersOverride = styled.div`
   & div:nth-child(3) {
     grid-column: 1;
     grid-row: 2;
-
-    & > img {
-      margin-bottom: -50px;
-    }
   }
 
   & div:nth-child(4) {
     grid-column: 2;
     grid-row: 2;
-
-    & > img {
-      margin-bottom: -50px;
-    }
   }
 `;
 
-export { Wrapper, ContainersOverride };
+const mobileContainers = css``;
+
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding-left: ${({ theme: { sizes } }) => sizes!.mobile!.lateralMargin}px;
+  padding-right: ${({ theme: { sizes } }) => sizes!.mobile!.lateralMargin}px;
+
+  ${mobileContainers}
+
+  @media (min-width: ${({ theme: { breakpoints } }) =>
+    breakpoints!.values.md}px) {
+      padding-left: ${({ theme: { sizes } }) => sizes!.desktop.lateralMargin}%;
+  padding-right: ${({ theme: { sizes } }) => sizes!.desktop.lateralMargin}%;
+    ${desktopContainers}
+  }
+`;
+
+export { Wrapper };

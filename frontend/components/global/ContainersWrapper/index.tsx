@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainersOverride, Wrapper } from "./styles";
+import { Wrapper } from "./styles";
 import Container from "../Container";
 
 const dummyData = [
@@ -29,16 +29,14 @@ const dummyData = [
 const ContainersWrapper = () => {
   return (
     <Wrapper>
-      <ContainersOverride>
-        {dummyData.map((category, index) => (
-          <Container
-            key={index}
-            title={category.title}
-            description={category.description}
-            url={category.url}
-          />
-        ))}
-      </ContainersOverride>
+      {dummyData.map((category, index) => (
+        <Container
+          key={index}
+          title={category.title}
+          description={category.description}
+          url={category.url}
+        />
+      ))}
     </Wrapper>
   );
 };

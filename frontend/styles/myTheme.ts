@@ -35,12 +35,13 @@ const myTheme: DefaultTheme = {
       searchBoxWidth: 270,
       searchButtonWidth: 45,
       selectWidth: 120,
+      lateralMargin: 10,
     },
     desktop: {
       searchButtonWidth: 65,
+      lateralMargin: 20,
     },
     formHeight: 37,
-    lateralMargin: 20,
     sliderHeight: 400,
   },
 };
