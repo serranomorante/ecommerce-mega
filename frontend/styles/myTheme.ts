@@ -28,6 +28,7 @@ const myTheme: DefaultTheme = {
     background: "#f2f2f2",
     formBorderColor: "#d0d0d082",
     navbarBorderColor: "#cccccc69",
+    jazzy: "#ffbc00",
   },
 
   sizes: {
@@ -36,6 +37,9 @@ const myTheme: DefaultTheme = {
       searchButtonWidth: 45,
       selectWidth: 120,
       lateralMargin: 10,
+      product: {
+        mediaHeight: 250,
+      },
     },
     desktop: {
       searchButtonWidth: 65,
@@ -43,6 +47,7 @@ const myTheme: DefaultTheme = {
     },
     formHeight: 37,
     sliderHeight: 400,
+    mainFullBorderPadding: 10,
   },
 };
 

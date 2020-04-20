@@ -25,7 +25,10 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { faHeart as faHeartLight } from "@fortawesome/free-regular-svg-icons";
+import {
+  faHeart as faHeartLight,
+  faShareSquare,
+} from "@fortawesome/free-regular-svg-icons";
 
 library.add(
   faChevronDown,
@@ -38,7 +41,8 @@ library.add(
   faArrowLeft,
   faShoppingCart,
   faHeartDarker,
-  faHeartLight
+  faHeartLight,
+  faShareSquare
 );
 
 const MyApp = ({ Component, pageProps }: AppProps) => {

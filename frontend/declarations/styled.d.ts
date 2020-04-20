@@ -15,6 +15,7 @@ declare module "styled-components" {
       background: string;
       formBorderColor: string;
       navbarBorderColor: string;
+      jazzy: string;
     };
 
     breakpoints?: {
@@ -40,6 +41,9 @@ declare module "styled-components" {
         selectWidth: number;
         searchButtonWidth: number;
         lateralMargin?: number;
+        product?: {
+          mediaHeight?: number;
+        };
       };
       desktop: {
         searchButtonWidth: number;
@@ -47,6 +51,7 @@ declare module "styled-components" {
       };
       formHeight?: number;
       sliderHeight: number;
+      mainFullBorderPadding: number;
     };
   }
 }

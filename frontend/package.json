@@ -13,10 +13,12 @@
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
+    "@types/yup": "^0.26.37",
     "apollo-cache-inmemory": "^1.6.5",
     "apollo-client": "^2.6.8",
     "apollo-link-http": "^1.5.16",
     "easy-peasy": "^3.3.0",
+    "formik": "^2.1.4",
     "graphql": "^15.0.0",
     "graphql-tag": "^2.10.3",
     "isomorphic-unfetch": "^3.0.0",
@@ -25,7 +27,8 @@
     "react": "^16.13.1",
     "react-apollo": "^3.1.4",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "yup": "^0.28.3"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.13.1",
